@@ -1,0 +1,53 @@
+type: m
+
+manager:
+  address: 127.0.0.1:4001
+  password: '123456'
+
+plugins:
+  flowSaver:
+    use: true
+  user:
+    use: true
+  account:
+    use: true
+  macAccount:
+    use: true
+  group:
+    use: true
+  email:
+    use: true
+    type: 'smtp'
+    username: 'xxxx@163.com'
+    password: 'xxxxx'
+    host: 'smtp.163.com'
+    port: '25'
+    ssl: true
+  webgui:
+    use: true
+    host: '0.0.0.0'
+    port: '3000'
+    # site: 'http://yourwebsite.com'
+    # cdn: 'http://xxx.com' # 静态资源cdn地址，可省略
+    # icon: 'icon.png' # 自定义首页图标，默认路径在 ~/.ssmgr 可省略
+    # skin: 'default' # 首页皮肤，可省略
+    # googleAnalytics: 'UA-xxxxxxxx-x' # Google Analytics ID，可省略
+    # gcmSenderId: '456102641793'
+    # gcmAPIKey: 'AAAAGzzdqrE:XXXXXXXXXXXXXX'
+  webgui_telegram:
+    use: false
+    token: '191374681:AAw6oaVPR4nnY7T4CtW78QX-Xy2Q5WD3wmZ'
+  alipay:
+    use: false
+    appid: 2015012108272442
+    notifyUrl: 'http://yourwebsite.com/api/user/alipay/callback'
+    merchantPrivateKey: 'xxxxxxxxxxxx'
+    alipayPublicKey: 'xxxxxxxxxxx'
+    gatewayUrl: 'https://openapi.alipay.com/gateway.do'
+  paypal:
+    use: false
+    mode: 'live' # sandbox or live
+    client_id: 'At9xcGd1t5L6OrICKNnp2g9'
+    client_secret: 'EP40s6pQAZmqp_G_nrU9kKY4XaZph'
+
+db: 'webgui.sqlite'
