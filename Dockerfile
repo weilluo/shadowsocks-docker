@@ -4,7 +4,7 @@ MAINTAINER LuoWei <luowei---010101@163.com>
 
 # install necessary tools
 RUN apt-get update
-RUN apt-get install -y curl wget net-tools git-core shadowsocks-libev
+RUN apt-get install -y curl wget iputils-ping net-tools git-core shadowsocks-libev
 
 # nvm environment variables
 ENV NVM_DIR /usr/local/nvm
