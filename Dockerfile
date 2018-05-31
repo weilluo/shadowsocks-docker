@@ -40,4 +40,4 @@ COPY .ssmgr /root/.ssmgr
 # copy start command
 COPY start.sh /root/.ssmgr/
 
-CMD /root/.ssmgr/start.sh
+ENTRYPOINT ["/root/.ssmgr/start.sh"]
