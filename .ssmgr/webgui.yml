@@ -18,8 +18,8 @@ plugins:
   email:
     use: true
     type: 'smtp'
-    username: 'xxxx@163.com'
-    password: 'xxxxx'
+    username: 'xxxxxx@163.com'
+    password: 'xxxxxx'
     host: 'smtp.163.com'
     port: '25'
     ssl: true

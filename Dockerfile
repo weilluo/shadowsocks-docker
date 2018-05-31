@@ -28,17 +28,16 @@ ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 # RUN node -v
 # RUN npm -v
 
+# install forever
+RUN npm i -g forever
+
 # install shadowsocks-manager
 RUN npm i -g shadowsocks-manager
 
 # copy ssmgr config files
 COPY .ssmgr /root/.ssmgr
 
-# start shadowsocks
-# RUN ss-manager -m aes-256-cfb -u --manager-address 127.0.0.1:4000
+# copy start command
+COPY start.sh /root/.ssmgr/
 
-# start ssmgr
-# RUN ssmgr
-
-# start webgui
-# RUN ssmgr -c /root/.ssmgr/webgui
+CMD /root/.ssmgr/start.sh
