@@ -8,7 +8,7 @@ RUN apt-get install -y curl wget net-tools git-core shadowsocks-libev
 
 # nvm environment variables
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 8.9.4
+ENV NODE_VERSION 6.14.2
 
 # install nvm
 # https://github.com/creationix/nvm#install-script
