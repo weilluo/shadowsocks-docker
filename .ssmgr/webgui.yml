@@ -1,7 +1,7 @@
 type: m
 
 manager:
-  address: 127.0.0.1:4001
+  address: xx.xx.xx.xx:4001
   password: '123456'
 
 plugins:
@@ -18,11 +18,11 @@ plugins:
   email:
     use: true
     type: 'smtp'
-    username: 'xxxxxx@163.com'
-    password: 'xxxxxx'
+    username: 'xxxx@163.com'
+    password: 'xxxx'
     host: 'smtp.163.com'
-    port: '25'
-    ssl: true
+    port: '994'
+    secure: true
   webgui:
     use: true
     host: '0.0.0.0'

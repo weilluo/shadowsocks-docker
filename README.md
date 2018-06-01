@@ -6,10 +6,8 @@
 
 ## Usage
 
-1. build, `docker build ./`
+1. build, `docker build ./ -t ssmgr:latest`
 
-2. create a network, `docker network create --subnet=172.18.0.0/16 ssmgr`
+2. run docker, `docker run -p 80:3000 -itd ssmgr:latest /bin/bash`
 
-3. start service, `/root/.ssmgr/start.sh`
-
-4. visit http://your-server-ip, to manage
+3. visit http://your-server-ip, to manage
