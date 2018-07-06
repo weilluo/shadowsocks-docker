@@ -40,4 +40,6 @@ COPY .ssmgr /root/.ssmgr
 # copy start command
 COPY start.sh /root/.ssmgr/
 
+EXPOSE 80:3000 4001 50000-60000
+
 ENTRYPOINT ["/root/.ssmgr/start.sh"]
