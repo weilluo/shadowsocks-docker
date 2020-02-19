@@ -3,18 +3,18 @@ const nodemailer = require('nodemailer');
 nodemailer.createTestAccount((err, account) => {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: 'smtp.163.com',
-        port: 994,
+        host: 'email-smtp.us-east-1.amazonaws.com',
+        port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: 'xxxx@163.com', // generated ethereal user
-            pass: 'xxxx' // generated ethereal password
+            user: 'sssss', // generated ethereal user
+            pass: 'xxxxx' // generated ethereal password
         }
     });
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Wei Luo" <544765812@qq.com>', // sender address
+        from: '"Wei Luo" <luowei---010101@163.com>', // sender address
         to: '544765812@qq.com', // list of receivers
         subject: 'Hello Test', // Subject line
         text: 'Hello world?', // plain text body

@@ -1,7 +1,7 @@
 type: m
 
 manager:
-  address: xx.xx.xx.xx:4001
+  address: 64.227.42.127:4001
   password: '123456'
 
 plugins:
@@ -18,10 +18,10 @@ plugins:
   email:
     use: true
     type: 'smtp'
-    username: 'xxx@163.com'
+    username: 'xxxx'
     password: 'xxxx'
-    host: 'smtp.163.com'
-    port: '994'
+    host: 'email-smtp.us-east-1.amazonaws.com'
+    port: '465'
     secure: true
   webgui:
     use: true
@@ -36,10 +36,10 @@ plugins:
     # gcmAPIKey: 'AAAAGzzdqrE:XXXXXXXXXXXXXX'
   webgui_telegram:
     use: false
-    token: '191374681:AAw6oaVPR4nnY7T4CtW78QX-Xy2Q5WD3wmZ'
+    token: 'xxxxx'
   alipay:
     use: false
-    appid: 2015012108272442
+    appid: 'xxxxxx'
     notifyUrl: 'http://yourwebsite.com/api/user/alipay/callback'
     merchantPrivateKey: 'xxxxxxxxxxxx'
     alipayPublicKey: 'xxxxxxxxxxx'
@@ -55,5 +55,5 @@ db: 'webgui.sqlite'
 redis:
   host: '127.0.0.1'
   port: 6379
-  password:
+  password: 123456
   db: 0
