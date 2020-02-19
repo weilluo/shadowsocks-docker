@@ -1,0 +1,42 @@
+! Put user rules line by line in this file.
+! See https://adblockplus.org/en/filter-cheatsheet
+! usually
+.amazon.com
+.github.com
+.paypal.com
+.globalcash.hk
+.usunlocked.com
+
+! server
+.conoha.jp
+.vultr.com
+.linode.com
+
+! Games
+.origin.com
+.cdkeys.com
+.hrkgame.com
+.humblebundle.com
+.steamdb.info
+.fanatical.com
+.ea.com
+.fast2play.com
+.greenmangaming.com
+.steamcommunity.com
+
+! tools
+.ping.pe
+.lastpass.com
+
+! Temp
+.getpocket.com
+.forbes.com
+.linuxacademy.com
+.visualstudio.com
+.msdn.hk
+.ifttt.com
+
+.giphy.com
+.softaculous.com
+
+.7th-dream.com
