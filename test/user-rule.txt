@@ -11,6 +11,7 @@
 .conoha.jp
 .vultr.com
 .linode.com
+.fastly.net
 
 ! Games
 .origin.com
